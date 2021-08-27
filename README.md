@@ -6,8 +6,8 @@ Your project description goes here. In your own words. What problem did you solv
 
 ## Checklist 
 
-- [ ] Create our document source files, log "DOM ready"
-- [ ] Building a template in HTML (alternately work first in JS, appending to dom from there)
+- [x] Create our document source files, log "DOM ready"
+- [x] Building a template in HTML (alternately work first in JS, appending to dom from there)
 - [ ] Add some basic style to the table
 - [ ] Button click that logs to the console
 - [ ] assign input to variables
