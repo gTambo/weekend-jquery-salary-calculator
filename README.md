@@ -1,9 +1,27 @@
-# Project Name
-
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+# Salary Calculator
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+Your project description goes here. In your own words. What problem did you solve? How did you solve it?
+
+## Checklist 
+
+- [ ] Create our document source files, log "DOM ready"
+- [ ] Building a template in HTML (alternately work first in JS, appending to dom from there)
+- [ ] Add some basic style to the table
+- [ ] Button click that logs to the console
+- [ ] assign input to variables
+- [ ] Create a function to append data to DOM
+- [ ] Global variables for monthly costs
+- [ ] Append monthly cost to the DOM
+- [ ] Logis for background color on the monthly cost
+- [ ] Create delete button that removes a row
+
+### Stretch
+
+- [ ] Uptdate the total cost on delete of row
+- [ ] Arrays and Objects to hold information
+- [ ] Alert the user of missing fields
+
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
