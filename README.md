@@ -10,7 +10,7 @@ Your project description goes here. In your own words. What problem did you solv
 - [x] Building a template in HTML (alternately work first in JS, appending to dom from there)
 - [x] Add some basic style to the table
 - [x] Button click that logs to the console
-- [ ] assign input to variables
+- [x] assign input to variables
 - [ ] Create a function to append data to DOM
 - [ ] Global variables for monthly costs
 - [ ] Append monthly cost to the DOM
