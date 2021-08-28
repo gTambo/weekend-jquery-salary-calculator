@@ -8,8 +8,8 @@ Your project description goes here. In your own words. What problem did you solv
 
 - [x] Create our document source files, log "DOM ready"
 - [x] Building a template in HTML (alternately work first in JS, appending to dom from there)
-- [ ] Add some basic style to the table
-- [ ] Button click that logs to the console
+- [x] Add some basic style to the table
+- [x] Button click that logs to the console
 - [ ] assign input to variables
 - [ ] Create a function to append data to DOM
 - [ ] Global variables for monthly costs

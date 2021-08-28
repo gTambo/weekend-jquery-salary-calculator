@@ -19,6 +19,9 @@ table {
 }
 
 #emp-header {
+    text-align: center;
+    font-size: 1.25rem;
+    border: 3px double black;
 }
   
 th, td {
@@ -31,6 +34,7 @@ th, td {
 }
 
 header {
+    text-align: center;
     background-color: lightgrey;
     padding: 5px;
 }
