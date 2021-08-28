@@ -11,7 +11,7 @@ Your project description goes here. In your own words. What problem did you solv
 - [x] Add some basic style to the table
 - [x] Button click that logs to the console
 - [x] assign input to variables
-- [ ] Create a function to append data to DOM
+- [x] Create a function to append data to DOM
 - [ ] Global variables for monthly costs
 - [ ] Append monthly cost to the DOM
 - [ ] Logis for background color on the monthly cost

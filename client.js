@@ -15,5 +15,13 @@ function addEmployeeInfo() {
     let title = $('#job-title').val();
     let baseSalary = $('#annual-salary').val();
     // console.log(firstName, lastName, idNumb, title, baseSalary);
-
+    $('#employee-table-body').append(`
+        <tr>
+            <td>${firstName}</td>
+            <td>${lastName}</td>
+            <td>${idNumb}</td>
+            <td>${title}</td>
+            <td>${baseSalary}</td>
+        </tr>
+            `)
 }
