@@ -13,7 +13,7 @@ Your project description goes here. In your own words. What problem did you solv
 - [x] assign input to variables
 - [x] Create a function to append data to DOM
 - [x] Global variables for monthly costs
-- [ ] Append monthly cost to the DOM
+- [x] Append monthly cost to the DOM
 - [ ] Logic for background color on the monthly cost
 - [ ] Create delete button that removes a row
 
