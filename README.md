@@ -12,9 +12,9 @@ Your project description goes here. In your own words. What problem did you solv
 - [x] Button click that logs to the console
 - [x] assign input to variables
 - [x] Create a function to append data to DOM
-- [ ] Global variables for monthly costs
+- [x] Global variables for monthly costs
 - [ ] Append monthly cost to the DOM
-- [ ] Logis for background color on the monthly cost
+- [ ] Logic for background color on the monthly cost
 - [ ] Create delete button that removes a row
 
 ### Stretch
