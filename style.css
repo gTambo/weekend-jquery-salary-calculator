@@ -39,6 +39,10 @@ header {
     padding: 5px;
 }
 
+.delete-header {
+    min-width: 100px;
+}
+
 #submit-button-spacer {
     margin: 1%;
     padding: 1px;

@@ -5,10 +5,14 @@ $(document).ready(readyNow);
 let allSalaries = [];
 let totalMonthlyCost = 0;
 let maxMonthlyCost = 20000;
+let employeeTableNumber = 0;
+let tableReference = [];
+
 
 function readyNow() {
     console.log('Document Ready');
     $('#submit-button').on('click', addEmployeeInfo);
+    $('#employee-table-body').on('click', '.delete-button', deleteEmployee);
 
 
 }
@@ -28,6 +32,18 @@ function calculateCost(salArr) {
     }
 }
 
+function updateCost() {
+
+}
+
+function deleteEmployee() {
+    let employeeRow = $(this).parent().parent();
+    console.log($(this).parent().parent());
+    // updateCost($(this));
+    console.log(tableReference);
+    employeeRow.remove();
+}
+
 function addEmployeeInfo() {
     console.log(`in addEmployeeInfo`);
     let firstName = $('#first-name');
@@ -37,17 +53,21 @@ function addEmployeeInfo() {
     let baseSalary = $('#annual-salary');
 
     allSalaries.push(baseSalary.val());
+    employeeTableNumber++;
+    console.log(employeeTableNumber);
+    tableReference.push(employeeTableNumber);
 
     // console.log(firstName, lastName, idNumb, title, baseSalary);
     $('#employee-table-body').append(`
-        <tr>
+        <tr class="${employeeTableNumber}">
             <td>${firstName.val()}</td>
             <td>${lastName.val()}</td>
             <td>${idNumb.val()}</td>
             <td>${title.val()}</td>
             <td class="salary">${baseSalary.val()}</td>
+            <td><button class="delete-button">Delete</button></td>
         </tr>
-            `);
+        `);
 
     firstName.val('');
     lastName.val('');
