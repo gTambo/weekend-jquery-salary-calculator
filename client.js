@@ -4,6 +4,7 @@ $(document).ready(readyNow);
 
 let allSalaries = [];
 let totalMonthlyCost = 0;
+let maxMonthlyCost = 20000;
 
 function readyNow() {
     console.log('Document Ready');
@@ -20,7 +21,11 @@ function calculateCost(salArr) {
     }
     console.log(`totalAnnualCost: ${totalAnnualCost}`);
     totalMonthlyCost = (totalAnnualCost / 12).toFixed(2);
-    $('#total-monthly-cost').html(totalMonthlyCost);
+    $('#total-monthly-cost').html(`Total monthly cost: ${totalMonthlyCost}`);
+
+    if (totalMonthlyCost > maxMonthlyCost) {
+        $('#total-monthly-cost').addClass('over-budget');
+    }
 }
 
 function addEmployeeInfo() {

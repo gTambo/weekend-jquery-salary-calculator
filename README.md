@@ -14,7 +14,7 @@ Your project description goes here. In your own words. What problem did you solv
 - [x] Create a function to append data to DOM
 - [x] Global variables for monthly costs
 - [x] Append monthly cost to the DOM
-- [ ] Logic for background color on the monthly cost
+- [x] Logic for background color on the monthly cost
 - [ ] Create delete button that removes a row
 
 ### Stretch

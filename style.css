@@ -43,3 +43,14 @@ header {
     margin: 1%;
     padding: 1px;
 }
+
+#total-monthly-cost {
+    text-align: right;
+    float: right;
+    border: solid 2px black;
+    padding: 8px;
+}
+
+.over-budget {
+    background-color: tomato;
+}
