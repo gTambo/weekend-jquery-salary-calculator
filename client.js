@@ -6,19 +6,17 @@ let allSalaries = [];
 let totalMonthlyCost = 0;
 let maxMonthlyCost = 20000;
 let employeeTableNumber = 0;
-let tableReference = [];
+// let tableReference = []; // No longer needed
 
 
 function readyNow() {
     console.log('Document Ready');
     $('#submit-button').on('click', addEmployeeInfo);
     $('#employee-table-body').on('click', '.delete-button', deleteEmployee);
-
-
 }
 
 function calculateCost(salArr) {
-    console.log('in calculateCost', allSalaries);
+    // console.log('in calculateCost', allSalaries);
     let totalAnnualCost = 0;
     for(item of salArr) {
         totalAnnualCost += parseInt(item);
@@ -35,17 +33,17 @@ function calculateCost(salArr) {
 
 }
 
-function updateCost(someNumber) {
-    let indexToDelete = someNumber - 1;
+function updateCost(index) {
+    let indexToDelete = index - 1;
     console.log('removing ', allSalaries[indexToDelete], 'from salaries');
     allSalaries.splice(indexToDelete, 1, '0'); // remember to replace the removed value with '0', in case of deleting in random order
     calculateCost(allSalaries);
 }
 
 function deleteEmployee() {
-    console.log('Employees: ', tableReference);
     let employeeRow = $(this).parent().parent();
     console.log($(this).parent().parent());
+    console.log($(this).attr('class'));
     // let salaryToRemove =$('#employee-table-body').find("td.salary").text();
     // console.log('found salary: ', salaryToRemove); // this returns a string of all salaries found, smashed together
     let deleteButtonClass = employeeRow.attr('class');
@@ -64,16 +62,19 @@ function addEmployeeInfo() {
     let idNumb = $('#id-number');
     let title = $('#job-title');
     let baseSalary = $('#annual-salary');
-    let employee = {};
+    // let employee = {};
 
     allSalaries.push(baseSalary.val());
     employeeTableNumber++;
-    console.log(employeeTableNumber);
-    employee.reference = employeeTableNumber;
-    employee.salary = baseSalary.val();
-    tableReference.push(employee);
-
-    // console.log(firstName, lastName, idNumb, title, baseSalary);
+    // console.log(employeeTableNumber);
+    // employee.reference = employeeTableNumber; // No longer needed
+    // employee.salary = baseSalary.val();
+    // tableReference.push(employee);
+    if (!firstName.val() || !lastName.val() || !idNumb.val() || !title.val() || !baseSalary.val()) {
+        alert('Please Fill out all fields');
+        return;
+    }
+    console.log(firstName.val(), lastName.val(), idNumb.val(), title.val(), baseSalary.val());
     $('#employee-table-body').append(`
         <tr class="${employeeTableNumber}">
             <td>${firstName.val()}</td>

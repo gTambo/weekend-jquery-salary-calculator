@@ -19,9 +19,9 @@ Your project description goes here. In your own words. What problem did you solv
 
 ### Stretch
 
-- [ ] Uptdate the total cost on delete of row
-- [ ] Arrays and Objects to hold information
-- [ ] Alert the user of missing fields
+- [x] Uptdate the total cost on delete of row
+- [x] Arrays and Objects to hold information
+- [x] Alert the user of missing fields
 
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
